@@ -19,7 +19,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         adapter.onItemClickFunction = { _, pos ->
-            startActivity(Intent(this@MainActivity, BreweryActivity::class.java).putExtra("pos", pos))
+            startActivity(Intent(this@MainActivity, BreweryActivity::class.java).putExtra("brewery", adapter.getBrewery(pos)))
         }
 
         recycler_view.layoutManager = LinearLayoutManager(this)

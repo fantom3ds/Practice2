@@ -8,6 +8,15 @@
         tools:context=".BreweryActivity"
         android:orientation="vertical">
 
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_name"
+            android:text="United States"
+            android:textColor="@color/colorBlack"
+            />
+
     <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

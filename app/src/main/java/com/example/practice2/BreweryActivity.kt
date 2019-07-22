@@ -13,7 +13,12 @@ class BreweryActivity : AppCompatActivity() {
         setContentView(R.layout.activity_brewery)
 
         brewery = this.intent.getSerializableExtra("brewery") as Brewery
-
+        brewery.apply {
+            tv_city.text = this?.city ?: ""
+            tv_country.text = this?.country ?: ""
+            tv_name.text = this?.name ?: ""
+            tv_street.text = this?.name ?: ""
+        }
 
     }
 }
